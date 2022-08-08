@@ -1,0 +1,75 @@
+*{ /* engloba todos os elementos da página html*/
+    margin: 0; /*margem zerada da página html*/
+    padding: 0; /*espacamento zerado da página html*/
+    box-sizing: border-box; /*borda em caixa*/
+    font-family: 'Montserrat', sans-serif; /*fonte de todo elemento da página html*/
+}
+body{ /* corpo da página html*/
+    background-color: rgb(194, 189, 189) /* cor de fundo do documento html*/
+}
+div{ /*container dos elementos da página html*/
+    height: 100vh; /*altura da div (vertical)*/
+    width: 100vw; /*largura da div (horizontal)*/
+    display: flex; /*caixa flexivel na página html*/
+    align-items: center; /*garante que os flex-items dentro de um elemento vão centralizar*/
+    justify-content: center; /*alinhamento dos itens ao centro da div*/
+}
+section{ /*seção genérica contida na página html*/
+    margin-left: 100px; /*define a área de margem no lado esquerdo de um elemento*/
+}
+h1{ /* cabecalho com maior evidencia na página html*/
+    color:#515151; /*cor do texto do h1*/
+    font-size: 100px; /*tamanho da fonte do h1*/
+}
+h2{ /* cabecalho com menor evidencia na página html*/
+    color:#515151; /*cor do texto do h2*/
+    font-size: 58px; /*tamanho da fonte do h2*/
+    font-weight: 500; /*Relativo ao elemento pai */
+}
+p{ /* parágrafo contendo texto*/
+    color: #848484; /*cor do texto*/
+    font-size: 24px; /*tamanho da fonte*/
+    font-weight: 400; /*Relativo ao elemento pai */
+    width: 500px; /*largura*/
+    margin-top: 30px; /*margem topo*/
+}
+button{ /*botão clicável, que pode ser colocado em qualquer lugar na página*/
+    background:#ADFF00; /*cor de fundo do botao*/
+    border-radius: 20.5px; /*borda arredondada*/
+    color: #000000; /*cor do texto*/
+    font-size: 20px; /*tamanho da fonte*/
+    Width:239px; /*largura*/
+    Height:64px; /*altura*/
+    border: none; /*limpa a borda*/
+    filter:contrast(0px 4px 0px rgba(0,0,0,0.2)); /*reduz o contraste e cria um visual (atmosférico)*/
+    font-weight: 900;/*Relativo ao elemento pai */
+    margin-top: 50px; /*margem topo*/
+}
+img{ /*imagem da página hmtl*/
+    width: 500px; /*largura*/
+    height: 500px; /*altura*/
+}
+/*responsividade*/
+/*especifica um conjunto de estilos que são aplicados*/
+@media (max-width: 1000px){ /*aplicacao para abaixo de (1000 pixels) na largura*/
+   
+    img{ /* imagem com largura e altura de (300 pixels)*/
+    width: 300px;
+    height: 300px;
+    }
+    div{ /*container definindo os estilos para o mobile*/
+        flex-direction: column;
+    }
+    section{ /*seção com margem zerada*/
+        margin: 0;
+    }
+    h1{ /* fonte do h1 reduzida*/
+        font-size: 50px;
+    }
+    h2{ /* fonte do h2 reduzida*/
+        font-size: 30px;
+    }
+    p{ /* sem o aparecimento do parágrafo*/
+        display: none;
+    }
+}
